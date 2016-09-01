@@ -1,5 +1,5 @@
 #!/bin/bash
-for line in $(cat lista_prueba.txt); do 
+for line in $(cat lista.txt); do 
 	echo "Se esta Procesando El rango de Red $line" ;
 	carpeta=$(echo $line  | sed 's/\//_barra_/g' ):
 	if [ ! -d "$carpeta" ]; then
