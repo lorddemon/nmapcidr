@@ -14,7 +14,7 @@ for line in $(cat lista.txt); do
 	for i in $ips
 	do
 		echo "Se empieza con el scaneo del equipo $i se guardara en la carpeta $carpeta";
-		nmap -A -p- -vv $i -oX ./$carpeta/$i.xml
+		nmap -A -p- -P0 -vv $i -oX ./$carpeta/$i.xml
 	done
 done
 
